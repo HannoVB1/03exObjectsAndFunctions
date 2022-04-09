@@ -2,8 +2,8 @@
 // Zorg dat op de index pagina, telkens je met de muis over het
 // <h1> element hovert, de eerste letter van de titel verdwijnt.
 // Na een aantal keer is de titel dan volledig verdwenen van het scherm.
-const h1 = document.getElementById('h1');
-h1.addEventListener("hover", e => { })
+let h1 = document.getElementById("h1");
+h1.addEventListener("mouseover", () => {h1.innerHTML = h1.innerHTML.slice(0, -1)});
 // Creëer een variabele h1, met daarin een object-representatie van het H1-element
 // Tip Maak gebruik van getElementById()
 

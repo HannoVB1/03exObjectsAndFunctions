@@ -4,15 +4,20 @@ const myBicycle = {
   speed: 30,
   gear: 1,
   frameMaterial: 'carbon fibre',
+  accelerate: function(perc) {myBicycle.speed += myBicycle.speed * (perc /100)}
 };
 
 // Voeg een methode accelerate toe aan myBicycle
 // De methode heeft 1 parameter, een percentage waarmee
 // de speed van myBicycle moet worden aangepast
 
+
+
 // Laat de fiets 25% versnellen. Log de speed voor en na
 // de methode aanroep.
-
+console.log(myBicycle.speed);
+myBicycle.accelerate(25)
+console.log(myBicycle.speed);
 // Voeg een methode toe die de snelheid beoordeelt
 // De methode retourneert een string
 // speed [0..10[ 'Walking...'
